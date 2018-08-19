@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:timer="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242"
+    android:backgroundTint="#424242"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Circular"
+    tools:showIn="@layout/activity_circular">
+
+    <io.github.krtkush.lineartimer.LinearTimerView
+        android:id="@+id/linearTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/cardview_dark_background"
+        android:foregroundGravity="center"
+        timer:radius="45dp"
+        timer:strokeWidth="17dp" />
+
+    <TextView
+        android:id="@+id/timerView"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        android:paddingLeft="20dp"
+        android:text="1:50"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="70dp" />
+
+
+</RelativeLayout>
